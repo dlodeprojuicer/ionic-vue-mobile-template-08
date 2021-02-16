@@ -9,16 +9,10 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-primary-shade: #19ce4f;
 
   --ion-color-light: #ffffff;
-  --ion-color-medium: #e6e5e5;
-  --ion-color-medium-tint: #777777;
-  --ion-color-medium-shade: #777777;
-  --ion-color-medium-contrast:#777777;
-  --ion-background-color: #e2e9ea;
-  color: #000;
+
+  --brand-primary: #950098;
+  --brand-secondary: #F7F7F7;
+  --brand-tertiary: #767676;
+  ;
 
 }
-
-h1 , h2 , h3 , h4 , p , a , ul li , strong , label {
-  color: #777777;
-}
-

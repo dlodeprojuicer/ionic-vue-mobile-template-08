@@ -1,24 +1,22 @@
 <template>
   <ion-list>
     <ion-item v-for="(item,index) in data" :key="index">
-      <ion-text slot="start" class="left" :style="`background-color: ${item.color}`">
-        <ion-icon class="left-icons" :icon="item.icon"></ion-icon>
+      <ion-text slot="start" class="left">
+        <img src="assets/img/list-icon.png" class="icon-img" />
       </ion-text>
       <ion-label>
-        <h2 :style="`color: ${item.color}`">{{ item.name }}</h2>
+        <h2>{{ item.name }}</h2>
         <p>{{ item.description }}</p>
       </ion-label>
       <ion-text class="cost">
         <b>{{ item.cost }}</b>
       </ion-text>
-      <ion-icon class="right-icons" :icon="chevronForward"  slot="end"></ion-icon>
     </ion-item>
   </ion-list>
 </template>
 
 <script>
-import { IonList, IonItem, IonLabel, IonText, IonIcon } from "@ionic/vue";
-import { chevronForward } from "ionicons/icons";
+import { IonList, IonItem, IonLabel, IonText } from "@ionic/vue";
 
 export default {
   name: "recent-list",
@@ -29,48 +27,63 @@ export default {
 			default: () => []
 		}
   },
-  components: { IonList, IonItem, IonLabel, IonText, IonIcon },
-  setup() {
-    return {
-      chevronForward
-    }
-  },
+  components: { IonList, IonItem, IonLabel, IonText },
 }
 </script>
 
 <style lang="scss" scoped>
 h2 {
-  font-weight: 600;
-	color: #000000;
+  // font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+}
+
+p {
+  // font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
 }
 
 ion-list {
-  margin: 0px 10px 10px 10px;
+  margin: 20px 0;
+  background: none;
 }
 
 ion-item {
-  --background: #ffffff;
+  --background: none;
   margin: 5px 0 0 -15px;
   line-height: 50px;
-  border-radius: 5px;
 
+  // &::part(.item-inner) {
+  //   --border-style: none;
+  // }
+}
+
+.icon-img {
+  border-radius: 30px;
+  width: 40px;
 }
 
 ion-text.left {
-  background: #ffffff;
-  padding: 15px 10px 0px 10px;
-  color: #000;
-  border-radius: 5px 0 0 5px;
-  margin: 0 15px 0 -2px;
+  padding: 15px 0px 0px 0;
+  margin: 0 14px 0 0px;
 
   ion-icon.left-icons {
-    color: #ffffff;
     font-size: 25px;
   }
 }
 
 ion-text.cost {
-  color: #404040;
+  color: var(--brand-primary);
+  font-style: normal;
+  font-weight: bold;
+  // font-size: 24px;
+  line-height: 23px;
 }
 
 ion-icon.right-icons {

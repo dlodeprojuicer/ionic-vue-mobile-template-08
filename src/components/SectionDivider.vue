@@ -16,10 +16,13 @@
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .section-divider {
-  margin: 10px 0 0 10px;
+  font-style: normal;
   font-weight: 500;
-  color: #3e3d3d;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+  margin-left: 10px;
 }
 </style>

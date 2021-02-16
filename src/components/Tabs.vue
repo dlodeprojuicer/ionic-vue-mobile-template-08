@@ -2,48 +2,37 @@
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button>
-        <ion-icon :icon="homeOutline" />
-        <span>Home</span>
+        <ion-icon :icon="home" />
       </ion-tab-button>
         
       <ion-tab-button>
-        <ion-icon :icon="readerOutline" />
-        <span>Cards</span>
+        <ion-icon :icon="cardOutline" />
       </ion-tab-button>
 
       <ion-tab-button>
-        <ion-icon :icon="repeatOutline" />
-        <span>Transact</span>
+        <ion-icon :icon="personCircleOutline" />
       </ion-tab-button>
 
-      <ion-tab-button>
-        <ion-icon :icon="chatboxEllipsesOutline" />
-        <span>Messages</span>
-      </ion-tab-button>
-
-      <ion-tab-button>
-        <ion-icon :icon="listOutline" />
-        <span>Explore</span>
+      <ion-tab-button class="fake-fab">
+        <ion-icon :icon="add" />
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
 </template>
 
 <script lang="ts">
-import { IonTabBar, IonTabButton, IonTabs, IonIcon } from '@ionic/vue';
-import { homeOutline, readerOutline, chatboxEllipsesOutline, listOutline, repeatOutline, notifications } from 'ionicons/icons';
+import { IonTabBar, IonTabButton, IonTabs, IonIcon, } from '@ionic/vue';
+import { home, cardOutline, personCircleOutline, add } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
   components: { IonTabs, IonTabBar, IonTabButton, IonIcon },
   setup() {
     return {
-      homeOutline, 
-      repeatOutline, 
-      notifications,
-      readerOutline,
-      chatboxEllipsesOutline,
-      listOutline
+      home, 
+      personCircleOutline,
+      cardOutline,
+      add
     }
   }
 }
@@ -62,5 +51,12 @@ ion-tab-bar {
     font-weight: 500;
     font-size: 14px;
   }
+}
+
+.fake-fab {
+ --background: var(--brand-primary);
+  // top: 38px;
+  color: #fff;
+  position: relative;
 }
 </style>
