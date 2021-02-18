@@ -1,11 +1,9 @@
-## Ionic Vue Mobile Template 04 
-![Netlify Status](https://api.netlify.com/api/v1/badges/61a3f498-564f-4f61-a0b3-2ed99c9ab102/deploy-status)
+## Ionic Vue Mobile Template 08 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b07cd159-d6b6-4508-8811-7dccf3af1dbc/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-08/deploys)
 
-Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages on Instagram or Dribble.
+Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages and/or websites.
 
-Template is inspired by the new Capitec Bank app. Capitec is one of the largest banks in South Africa. It provides personal banking services through its 1000-plus branches across the country. For this template the focus is on the general look and feel.
-
-[Demo](https://ionic-vue-mobile-template-04.netlify.app)
+[Demo](https://ionic-vue-mobile-template-08.netlify.app)
 
 ## Project setup
 ```
@@ -24,9 +22,7 @@ npm run serve
 
 Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native builds
 
-### Prepare native builds
-
-## iOS testing and distribution
+### iOS testing and distribution
 1. Download latest Xcode
 2. `npm run build`
 3. `npx cap add ios`
@@ -37,7 +33,7 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 
 *Icons and launch images* - Xcode (v11.5) cannot map icons listed in config.xml so this has to be done manually 😞. In the root folder look for Resources and select Images.xcassets. A panel will show up where you can select AppIcon to add app icons or LaunchImage to add launch images.
 
-## Android testing and distribution
+### Android testing and distribution
 1. Download latest Android Studio
 2. `npm run build`
 3. `npx cap add android`
@@ -50,10 +46,13 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 - [Getting started](https://ionicframework.com/docs/vue/quickstart)
 - [Changelog](https://github.com/ionic-team/ionic-framework/blob/master/CHANGELOG.md)
 
-## Newsletter
-[Subscribe](https://mailchi.mp/b9133e120ccf/sqan8ggx22) to get templete and other ionic-vue updates in your inbox!
+## Resources
+- [Newsletter](https://mailchi.mp/b9133e120ccf/sqan8ggx22) - Signup to my Ionic Vue newsletter to get templates and other Ionic Vue updates in your inbox!
+- [YouTube Channel](https://www.youtube.com/channel/UC5jZ6srZuLwt3O3ZtuM1Dsg) - Subscribe to my YouTube channel.
+- [Ionic Vue Tempalates](https://tinyurl.com/y2gl39dk) - Free Ionic Vue Templates.
+- [Ionic Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=dlodeprojuicer.ionicvuesnippets) - This extension adds ionic-vue snippets. Quickly add ionic-vue component code by simply typing iv. The iv prefix will show a range of snippets to choose from.
 
-## Template affiliates
+## Affiliates
 I want to keep doing these templates for free for as long as possible. I have joined a few affialate programs to help take care of the costs. 
 - [Pixeltrue](https://www.pixeltrue.com/?via=simo) - High quality illustrations that will help you build breath-taking websites.
 - [Getrewardful](https://www.getrewardful.com/?via=simo) - Create your own affilaite program.
@@ -61,7 +60,7 @@ I want to keep doing these templates for free for as long as possible. I have jo
 Alternatively you can buy me a coffee <a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
 
 ## Credits
-- [Tami Maiwashe](https://www.linkedin.com/in/tami-maiwashe-32824a19a/) - Documentation
+- [Stella Muloongo Mwanahamuntu](https://twitter.com/mwanahamuntu_) - Design
 - [おかきょー](https://twitter.com/31415O_Kyo) - [Japanese doc translation](https://github.com/dlodeprojuicer/ionic-vue-mobile-template-01/blob/master/readme-ja.md)
 
 ## Contact
