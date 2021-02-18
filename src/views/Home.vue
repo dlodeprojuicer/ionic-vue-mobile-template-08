@@ -8,7 +8,7 @@
         Let's make your banking needs easy!
       </p>
 
-      <img src="assets/img/card1.png" class="card-img" />
+      <img src="assets/img/card1.png" class="card-img" @click="cardDetails()" />
 
       <QuickActions />
 
@@ -16,22 +16,24 @@
 
       <RecentList :data="recentList" />
 
-      <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button>
           <ion-icon :icon="add"></ion-icon>
         </ion-fab-button>
-      </ion-fab> -->
-
-      <div class="fake-fab">
-        <ion-icon :icon="add" />
-      </div>
+      </ion-fab>
 
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonPage, IonContent, IonIcon } from "@ionic/vue";
+import { 
+  IonPage, 
+  IonContent, 
+  IonIcon,
+  IonFab,
+  IonFabButton
+} from "@ionic/vue";
 import { grid, menu, shield, statsChart, repeat, refresh, add } from "ionicons/icons";
 
 import RecentList from "../components/RecentList";
@@ -48,10 +50,9 @@ export default {
     QuickActions,
     SectionDivider,
     IonContent,
-    IonIcon
-    // IonFab, 
-    // IonIcon,
-    // IonFabButton
+    IonIcon,
+    IonFab, 
+    IonFabButton
   },
   setup() {
     return {
@@ -98,6 +99,11 @@ export default {
       ],
     };
   },
+  methods: {
+    cardDetails() {
+      this.$router.push("/card-details");
+    }
+  }
 };
 </script>
 
@@ -141,6 +147,14 @@ p.greeting-tag {
 ion-fab-button {
  --background: var(--brand-primary);
   top: 38px;
+  margin-right: 15px;
   position: relative;
+  --border-radius: 0;
+  transform: rotate(44deg);
+  --border-radius: 15px;
+
+  ion-icon {
+    transform: rotate(-44deg);
+  }
 }
 </style>

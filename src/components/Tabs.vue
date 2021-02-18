@@ -1,26 +1,25 @@
 <template>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
-      <ion-tab-button>
+      <ion-tab-button tab="" href="/home">
         <ion-icon :icon="home" />
       </ion-tab-button>
         
-      <ion-tab-button>
+      <ion-tab-button tab="" href="">
         <ion-icon :icon="cardOutline" />
       </ion-tab-button>
 
-      <ion-tab-button>
+      <ion-tab-button tab="" href="">
         <ion-icon :icon="personCircleOutline" />
       </ion-tab-button>
 
-      <ion-tab-button class="fake-fab">
-        <ion-icon :icon="add" />
+      <ion-tab-button tab="" href="">
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
 </template>
 
-<script lang="ts">
+<script>
 import { IonTabBar, IonTabButton, IonTabs, IonIcon, } from '@ionic/vue';
 import { home, cardOutline, personCircleOutline, add } from 'ionicons/icons';
 
@@ -45,6 +44,7 @@ ion-tab-bar {
 
   ion-icon {
     font-size: 35px;
+    color: var(--brand-primary);
   }
 
   span {
@@ -53,10 +53,4 @@ ion-tab-bar {
   }
 }
 
-.fake-fab {
- --background: var(--brand-primary);
-  // top: 38px;
-  color: #fff;
-  position: relative;
-}
 </style>
