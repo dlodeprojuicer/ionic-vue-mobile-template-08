@@ -16,16 +16,35 @@
       <ion-tab-button tab="" href="">
       </ion-tab-button>
     </ion-tab-bar>
+    <ion-fab vertical="bottom" horizontal="end" edge slot="fixed">
+      <ion-fab-button>
+        <ion-icon :icon="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
   </ion-tabs>
 </template>
 
 <script>
-import { IonTabBar, IonTabButton, IonTabs, IonIcon, } from '@ionic/vue';
+import { 
+  IonTabBar, 
+  IonTabButton, 
+  IonTabs, 
+  IonIcon,
+  IonFab,
+  IonFabButton
+} from '@ionic/vue';
 import { home, cardOutline, personCircleOutline, add } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
-  components: { IonTabs, IonTabBar, IonTabButton, IonIcon },
+  components: { 
+    IonTabs, 
+    IonTabBar, 
+    IonTabButton, 
+    IonIcon,
+    IonFab,
+    IonFabButton 
+  },
   setup() {
     return {
       home, 
@@ -40,7 +59,7 @@ export default {
 <style lang="scss" scoped>
 ion-tab-bar {
   --background: #ffffff;
-  height: 70px;
+  height: 60px;
 
   ion-icon {
     font-size: 35px;
@@ -53,4 +72,16 @@ ion-tab-bar {
   }
 }
 
+ion-fab-button {
+ --background: var(--brand-primary);
+  bottom: 55px;
+  margin-right: 15px;
+  position: relative;
+  transform: rotate(44deg);
+  --border-radius: 15px;
+  border: 3px solid #fff;
+  ion-icon {
+    transform: rotate(-44deg);
+  }
+}
 </style>
