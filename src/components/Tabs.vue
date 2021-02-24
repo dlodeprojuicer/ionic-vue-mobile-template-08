@@ -1,31 +1,34 @@
 <template>
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="" href="/home">
-        <ion-icon :icon="home" />
-      </ion-tab-button>
-        
-      <ion-tab-button tab="" href="">
-        <ion-icon :icon="cardOutline" />
-      </ion-tab-button>
+  <ion-page>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="" href="/home">
+          <ion-icon :icon="home" />
+        </ion-tab-button>
+          
+        <ion-tab-button tab="" href="">
+          <ion-icon :icon="cardOutline" />
+        </ion-tab-button>
 
-      <ion-tab-button tab="" href="">
-        <ion-icon :icon="personCircleOutline" />
-      </ion-tab-button>
+        <ion-tab-button tab="" href="">
+          <ion-icon :icon="personCircleOutline" />
+        </ion-tab-button>
 
-      <ion-tab-button tab="" href="">
-      </ion-tab-button>
-    </ion-tab-bar>
-    <ion-fab vertical="bottom" horizontal="end" edge slot="fixed">
-      <ion-fab-button>
-        <ion-icon :icon="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </ion-tabs>
+        <ion-tab-button tab="" href="">
+        </ion-tab-button>
+      </ion-tab-bar>
+      <ion-fab vertical="bottom" horizontal="end" edge slot="fixed">
+        <ion-fab-button>
+          <ion-icon :icon="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-tabs>
+  </ion-page>
 </template>
 
 <script>
 import { 
+  IonPage,
   IonTabBar, 
   IonTabButton, 
   IonTabs, 
@@ -38,6 +41,7 @@ import { home, cardOutline, personCircleOutline, add } from 'ionicons/icons';
 export default {
   name: 'Tabs',
   components: { 
+    IonPage,
     IonTabs, 
     IonTabBar, 
     IonTabButton, 
